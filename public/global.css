@@ -1,0 +1,108 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  height: 1920px;
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  padding: 1.5rem;
+  height: auto;
+}
+
+#catalog-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  overflow: scroll;
+  height: 1025px;
+}
+
+div.bx--data-table-container {
+  overflow: scroll;
+  height: 1135px;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 22%;
+  margin: 0.5rem;
+  border: 1px solid #e5e1e6;
+  box-shadow: 0 0 10px #e5e1e6;
+}
+
+#search-container {
+  margin: 2rem;
+}
+
+input.bx--search-input:focus, button.bx--search-close:focus, input.bx--search-input:active, button.bx--search-close:active {
+  outline: 2px solid #861f41;
+}
+
+button.bx--btn--primary {
+  font-size: 1rem;
+  color: white;
+  background-color: #861f41;
+  border: 2px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-color: #a52650;
+  box-shadow: 0 0 10px rgb(102 102 102 / 70%);
+}
+
+button.bx--btn--primary:hover, button.bx--btn--primary:focus, button.bx--btn--primary:active {
+  background-color:#861f41;
+  border-color: #a52650;
+}
+
+button.bx--search-close:focus::before, button.bx--search-close:active::before {
+  background-color: #a52650;
+}
+
+input.bx--search-input:focus ~ button.bx--search-close:hover {
+  outline: 2px solid #a52650;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.tool-image {
+  height: 221px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tool-name, .quantity, .location {
+  margin: 0.3rem 1rem;
+}
+
+.tool-name {
+  height: 75px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.quantity, .location {
+  height: 25px;
+}
